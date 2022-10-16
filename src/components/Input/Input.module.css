@@ -1,0 +1,73 @@
+.gb-input-container {
+    @apply relative;
+}
+
+.gb-input, .gb-input:focus {
+    @apply block box-border pl-3 pr-3 py-2 w-full rounded-md text-sm transition-all;
+    @apply bg-white;
+    /* @apply focus: ring-input-border-focus-light focus:border-input-border-focus-light focus:outline-none; */
+
+    /* @apply dark: bg-transparent dark:text-input-value-dark dark:border-input-border-dark; */
+    /* @apply dark: focus:border-input-border-focus-dark dark:focus:ring-input-border-focus-dark; */
+
+    /* box-shadow: 0 0 0 2px rgba(255, 255, 255, 0); */
+    transition: box-shadow 0.3s ease-in-out;
+    @apply outline-none border-black;
+    @apply font-sans;
+    @apply outline-none;
+    @apply border-2 border-black;
+}
+
+.gb-input:focus {
+    box-shadow: 3px 3px 0 black;
+}
+
+.gb-input:disabled {
+    @apply cursor-not-allowed;
+}
+
+.gb-input--error:focus {
+    box-shadow: 3px 3px 0 red;
+}
+
+.gb-input--error, .gb-input--error:focus {
+    @apply border-red-400;
+}
+
+.gb-input--borderless {
+    @apply border-transparent shadow-none;
+}
+
+.gb-input__label {
+    @apply font-sans mb-1;
+    @apply block;
+}
+
+.gb-input__description, .gb-input__error {
+    @apply font-sans mt-1;
+    @apply block;
+}
+
+/*
+    Input sizes
+  */
+
+.gb-input--xs {
+    @apply px-2.5 py-1.5 text-xs;
+}
+
+.gb-input--sm {
+    @apply px-3 py-2 text-sm leading-4;
+}
+
+.gb-input--md {
+    @apply px-4 py-2 text-sm;
+}
+
+.gb-input--lg {
+    @apply px-4 py-2 text-base;
+}
+
+.gb-input--xl {
+    @apply px-6 py-3 text-base;
+}

@@ -1,0 +1,26 @@
+.gb-navbar__wrapper {
+    @apply relative bg-white;
+}
+
+.gb-navbar {
+    @apply flex items-center w-full h-16 fixed top-0 left-0 z-50 bg-white;
+    @apply border-b-2 border-black;
+    @apply h-16;
+}
+
+.gb-navbar__logo {
+    width: 64px;
+    height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    @apply border-r-2 border-black flex items-center justify-center;
+}
+
+.gb-navbar__links {
+    @apply flex items-center h-full;
+}
+
+.gb-navbar__link {
+    @apply px-4 h-full hover:bg-gray-100;
+    @apply flex items-center justify-center;
+}

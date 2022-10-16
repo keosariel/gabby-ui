@@ -1,0 +1,88 @@
+.gb-select-container {
+    @apply relative;
+}
+
+.gb-select, .gb-select:focus {
+    @apply block w-full bg-white pl-3 pr-10 py-2 text-sm rounded-md shadow-sm transition-all;
+
+    /* @apply text-input-value-light border border-solid border-input-border-light;
+    @apply focus:ring-input-border-focus-light focus:border-input-border-focus-light focus:outline-none;
+  
+    @apply dark:bg-transparent dark:text-input-value-dark dark:border-input-border-dark;
+    @apply dark:focus:border-input-border-focus-dark dark:focus:ring-input-border-focus-dark; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-overflow: '';
+    /* box-shadow: 0 0 0 2px rgba(255, 255, 255, 0); */
+    transition: box-shadow 0.3s ease-in-out;
+
+    /* // temporary fix
+    //
+    // temporary fix for supabase apps
+    // tailwind @base styles adds a dropdown chevron
+    // using background image as default
+    // */
+    background-image: none;
+    @apply outline-none;
+    @apply border-2 border-black;
+}
+
+.gb-select option {
+    @apply bg-white text-gray-800;
+}
+
+.gb-select--error:focus {
+    box-shadow: 3px 3px 0 red;
+}
+
+.gb-select--error, .gb-select--error:focus {
+    @apply border-red-400;
+}
+
+.gb-select--borderless {
+    @apply border-transparent shadow-none;
+}
+
+/*
+    Select sizes
+  */
+
+.gb-select--xs {
+    @apply px-2.5 py-1.5 text-xs;
+}
+
+.gb-select--sm {
+    @apply px-3 py-2 text-sm leading-4;
+}
+
+.gb-select--md {
+    @apply px-4 py-2 text-sm;
+}
+
+.gb-select--lg {
+    @apply px-4 py-2 text-base;
+}
+
+.gb-select--xl {
+    @apply px-6 py-3 text-base;
+}
+
+/*
+    Select icon
+  */
+
+.gb-select--with-icon {
+    @apply pl-10;
+}
+
+/*
+    Select Chevron
+  */
+
+.gb-select-chevron-container {
+    @apply absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none;
+}
+
+.gb-select-chevron {
+    @apply h-5 w-5 text-gray-400;
+}

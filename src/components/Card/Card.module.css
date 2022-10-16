@@ -1,0 +1,25 @@
+.gb-card {
+    @apply flex flex-col bg-white dark:bg-dark-700 rounded overflow-hidden relative;
+    @apply border-2 border-black transition ease-out duration-200;
+}
+
+.gb-card--hoverable:hover {
+    box-shadow: 3px 3px 0 black;
+}
+
+.dark .gb-card {
+    border: 1px solid #2a2a2a;
+}
+
+.gb-card-head {
+    @apply px-8 py-6 flex justify-between;
+    @apply border-b-2 border-black;
+}
+
+.dark .gb-card-head {
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.gb-card-content {
+    @apply p-8;
+}

@@ -1,0 +1,47 @@
+.gb-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-500 bg-opacity-10;
+    @apply font-sans;
+    @apply text-green-500;
+    @apply border border-green-500;
+}
+
+
+.gb-badge--large {
+    @apply px-3 py-0.5 rounded-full text-sm;
+}
+
+.gb-badge-dot {
+    @apply -ml-0.5 mr-1.5 h-2 w-2;
+}
+
+.gb-badge--gray {
+    @apply bg-gray-600 bg-opacity-10 text-gray-500;
+}
+
+.gb-badge--red {
+    @apply bg-red-600 bg-opacity-10 text-red-500;
+}
+
+.gb-badge--yellow {
+    @apply bg-yellow-600 bg-opacity-10 text-yellow-500;
+}
+
+.gb-badge--green {
+    @apply bg-green-600 bg-opacity-10 text-green-500;
+}
+
+.gb-badge--blue {
+    @apply bg-blue-600 bg-opacity-10 text-blue-500;
+}
+
+.gb-badge--indigo {
+    @apply bg-indigo-600 bg-opacity-10 text-indigo-500;
+}
+
+.gb-badge--purple {
+    @apply bg-purple-600 bg-opacity-10 text-purple-500;
+}
+
+.gb-badge--pink {
+    @apply bg-pink-600 bg-opacity-10 text-pink-500;
+}

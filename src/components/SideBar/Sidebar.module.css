@@ -1,0 +1,123 @@
+.gb-sidebar--wrapper {
+    @apply w-full h-screen fixed;
+    @apply flex;
+    transition: width 250ms ease-out;
+}
+
+.gb-sidebar--content {
+    transition: display 250ms ease-out;
+    @apply p-2 overflow-y-auto;
+}
+
+.gb-sidebar {
+    @apply h-full transition ease-out duration-200;
+    @apply border-r-2 border-black;
+    transform: translateX(0);
+    @apply w-96;
+}
+
+.gb-sidebar--wrapper:has(.gb-sidebar--checkbox:checked) .gb-sidebar {
+    transform: translateX(-400px);
+    transition: transform 250ms ease-in-out;
+    @apply w-0
+}
+
+/* .gb-sidebar--wrapper:has(.gb-sidebar--checkbox:checked) {
+    @apply w-16;
+    transition: width 250ms ease-out;
+} */
+
+.gb-sidebar--toggle {
+    @apply w-16 h-full border-r-2 border-black relative bg-gray-100;
+    z-index: 10;
+    width: 4rem;
+    min-width: 4rem;
+}
+
+.gb-sidebar--toggle--icon {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+
+.gb-sidebar--toggle--icon > .spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+}
+
+.gb-sidebar--toggle--icon > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.gb-sidebar--toggle--icon > .diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+.gb-sidebar--toggle--icon > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.gb-sidebar--checkbox {
+    @apply absolute w-full h-full opacity-0 cursor-pointer;
+}
+
+.gb-sidebar--checkbox:checked ~ .gb-sidebar--toggle--icon > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+.gb-sidebar--checkbox:checked ~ .gb-sidebar--toggle--icon > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+
+.gb-sidebar--checkbox:checked ~ .gb-sidebar--toggle--icon > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+@media screen and (max-width: 768px) {
+    .gb-sidebar {
+        transform: translateX(-100%);
+        transition: transform 250ms ease-in-out;
+        @apply w-0;
+    }
+
+    .gb-sidebar--wrapper:has(.gb-sidebar--checkbox:checked) .gb-sidebar {
+        transform: translateX(0);
+        @apply w-full border-0;
+    }
+
+    .gb-sidebar--wrapper:has(.gb-sidebar--checkbox:checked) .gb-sidebar--content {
+        display: none;
+        transition: display 250ms ease-out;
+    }
+}
