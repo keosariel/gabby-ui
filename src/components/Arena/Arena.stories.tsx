@@ -10,7 +10,24 @@ import { Typography } from '../Typography';
 
 const meta: Meta = {
   title: 'Templates/Arena',
-  component: Arena
+  component: Arena,
+  argTypes: {
+    children: {
+      control: { type: 'object' },
+    },
+    navBar: {
+      control: { type: 'object' },
+    },
+    sideBar: {
+      control: { type: 'object' },
+    },
+    style: {
+      control: { type: 'object' },
+    },
+    className: {
+      control: { type: 'text' },
+    },
+  }
 };
 
 
@@ -32,9 +49,7 @@ export const Default = Template.bind({});
 Default.args = {
   navBar: (
     <Navbar links={[
-      { text: 'Dashboard', href: '/' },
-      // { text: 'About', href: '/about' },
-      // { text: 'Contact', href: '/contact' },
+      { text: 'Dashboard', href: '/' }
     ]} logo={(
             <svg width="50" height="50" viewBox="0 0 525 512" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="208" cy="255" r="200" fill="black"/>
@@ -54,13 +69,26 @@ Default.args = {
     </Card>
     </>
   }>
-        <Typography.Text size="md">Arena content</Typography.Text>
-        <br/>
-        <hr/>
-        <Typography.Text size="md">Arena content</Typography.Text>
-        <br/>
-        <hr/>
-        <Typography.Text size="md">Arena content</Typography.Text>
+      <Typography.Text className='px-4 my-3 block' size="md">Title 1</Typography.Text>
+      <hr/>
+      <Typography.Text className='px-4 my-3 block' size="md">Title 2</Typography.Text>
+      <hr/>
+      <Typography.Text className='px-4 my-3 block' size="md">Title 3</Typography.Text>
+      <hr/>
+      <Typography.Text className='px-4 my-3 block' size="md">Title 5</Typography.Text>
+      <hr/>
+      <Typography.Text className='px-4 my-3 block' size="md">Title 6</Typography.Text>
+      <hr/>
+      <Typography.Text className='px-4 my-3 block' size="md">Title 7</Typography.Text>
+      <hr/>
+      <Typography.Text className='px-4 my-3 block' size="md">Title 8</Typography.Text>
+      <hr/>
+      <Typography.Text className='px-4 my-3 block' size="md">Title 9</Typography.Text>
+      <hr/>
+      <Typography.Text className='px-4 my-3 block' size="md">Title 10</Typography.Text>
+      <hr/>
+      <Typography.Text className='px-4 my-3 block' size="md">Title 11</Typography.Text>
+      
   </Sidebar>
 };
 

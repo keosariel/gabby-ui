@@ -9,6 +9,7 @@ export interface CardProps {
     cover?: React.ReactNode
     description?: string
     hoverable?: boolean
+    shadow?: boolean
     style?: React.CSSProperties
     title?: string
     titleExtra?: React.ReactNode
@@ -19,6 +20,7 @@ const Card = ({
     className,
     cover,
     description,
+    shadow,
     hoverable,
     style,
     title,
@@ -28,6 +30,7 @@ const Card = ({
     let classes = [CardStyles['gb-card']]
     if (hoverable) classes.push(CardStyles['gb-card--hoverable'])
     if (className) classes.push(className)
+    if (shadow) classes.push(CardStyles['gb-card--shadow'])
     
     return (
         <div className={classes.join(' ')} style={style}>

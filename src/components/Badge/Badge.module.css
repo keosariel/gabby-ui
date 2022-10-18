@@ -2,7 +2,7 @@
     @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-500 bg-opacity-10;
     @apply font-sans;
     @apply text-green-500;
-    @apply border border-green-500;
+    /* @apply border border-green-500; */
 }
 
 

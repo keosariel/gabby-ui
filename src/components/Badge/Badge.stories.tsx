@@ -9,7 +9,19 @@ const meta: Meta = {
   component: Badge,
   argTypes: {
     children: {
+      control: { type: 'text' },
       defaultValue: 'Badge'
+    },
+    color: {
+      options: ['gray', 'red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'],
+      control: { type: 'select' },
+    },
+    size: {
+      options: ['sm', 'lg'],
+      control: { type: 'select' },
+    },
+    dot: {
+      control: { type: 'boolean' },
     }
   }
 };

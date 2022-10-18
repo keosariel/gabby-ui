@@ -1,9 +1,9 @@
 .gb-navbar__wrapper {
-    @apply relative bg-white;
+    @apply relative bg-white w-full;
 }
 
 .gb-navbar {
-    @apply flex items-center w-full h-16 fixed top-0 left-0 z-50 bg-white;
+    @apply flex items-center w-full h-16 fixed top-0 z-50 bg-white;
     @apply border-b-2 border-black;
     @apply h-16;
 }

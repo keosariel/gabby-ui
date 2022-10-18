@@ -1,3 +1,7 @@
 .gb-arena--content.gb-arena--sidebar {
-    @apply w-full h-full mt-16;
+    @apply w-full h-full mt-12;
+}
+
+.gb-arena--content.gb-arena--sidebar > .gb-arena--content {
+    @apply p-2;
 }

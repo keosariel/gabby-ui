@@ -9,7 +9,53 @@ import { Typography } from '../Typography';
 
 const meta: Meta = {
   title: 'Navigations/Popover',
-  component: Popover
+  component: Popover,
+  argTypes: {
+    align: {
+      options: ['center', 'start', 'end'],
+      control: { type: 'select' },
+    },
+    ariaLabel: {
+      control: { type: 'text' },
+    },
+    arrow: {
+      control: { type: 'boolean' },
+    },
+    children: {
+      control: { type: 'object' },
+    },
+    className: {
+      control: { type: 'text' },
+    },
+    defaultOpen: {
+      control: { type: 'boolean' },
+    },
+    modal: {
+      control: { type: 'boolean' },
+    },
+    open: {
+      control: { type: 'boolean' },
+    },
+    overlay: {
+      control: { type: 'object' },
+    },
+    portalled: {
+      control: { type: 'boolean' },
+    },
+    showClose: {
+      control: { type: 'boolean' },
+    },
+    side: {
+      options: ['top', 'right', 'bottom', 'left'],
+      control: { type: 'select' },
+    },
+    sideOffset: {
+      control: { type: 'number' },
+    },
+    style: {
+      control: { type: 'object' },
+    }
+  }
 };
 
 const Template: Story<PopoverProps> = (args) => (
@@ -18,8 +64,6 @@ const Template: Story<PopoverProps> = (args) => (
       {...args}
       side="bottom"
       align="center"
-      portalled
-      showClose
       className="w-96"
       overlay={[
         <>
@@ -58,7 +102,7 @@ const Template: Story<PopoverProps> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-    
+    arrow: true
 };
 
 export default meta;

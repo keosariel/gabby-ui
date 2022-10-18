@@ -9,6 +9,31 @@ const meta: Meta = {
   component: Toggle,
   argTypes: {
     onChange: { action: 'changed' },
+    disabled: {
+      control: { type: 'boolean' },
+    },
+    error: {
+      control: { type: 'boolean' },
+    },
+    descriptionText: {
+      control: { type: 'text' },
+    },
+    label: {
+      control: { type: 'text' },
+    },
+    className: {
+      control: { type: 'text' },
+    },
+    defaultChecked: {
+      control: { type: 'boolean' },
+    },
+    checked: {
+      control: { type: 'boolean' },
+    },
+    size: {
+      options: ['xs', 'sm', 'md', 'lg', 'xl'],
+      control: { type: 'select' },
+    },
   }
 };
 

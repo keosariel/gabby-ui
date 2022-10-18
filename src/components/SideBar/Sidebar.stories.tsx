@@ -7,7 +7,21 @@ import { Typography } from '../Typography';
 
 const meta: Meta = {
   title: 'Templates/Sidebar',
-  component: Sidebar
+  component: Sidebar,
+  argTypes: {
+    children: {
+      control: { type: 'object' },
+    },
+    className: {
+      control: { type: 'text' },
+    },
+    style: {
+      control: { type: 'object' },
+    },
+    content: {
+      control: { type: 'object' },
+    }
+  }
 };
 
 

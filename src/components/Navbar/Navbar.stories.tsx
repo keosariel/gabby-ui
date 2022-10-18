@@ -6,7 +6,21 @@ import { Navbar, NavbarProps } from '.';
 
 const meta: Meta = {
   title: 'Templates/Navbar',
-  component: Navbar
+  component: Navbar,
+  argTypes: {
+        links: {
+            control: { type: 'object' },
+        },
+        logo: {
+            control: { type: 'object' },
+        },
+        className: {
+            control: { type: 'text' },
+        },
+        style: {
+            control: { type: 'object' },
+        }
+    }
 };
 
 const Template: Story<NavbarProps> = (args) => (

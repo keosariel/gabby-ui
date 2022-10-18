@@ -7,7 +7,36 @@ import { Typography } from '../Typography';
 
 const meta: Meta = {
   title: 'Displays/Card',
-  component: Card
+  component: Card,
+  argTypes: {
+    children: {
+      control: { type: 'object' },
+    },
+    title: {
+      control: { type: 'text' },
+    },
+    description: {
+      control: { type: 'text' },
+    },
+    hoverable: {
+      control: { type: 'boolean' },
+    },
+    shadow: {
+      control: { type: 'boolean' },
+    },
+    style: {
+      control: { type: 'object' },
+    },
+    className: {
+      control: { type: 'text' },
+    },
+    cover: {
+      control: { type: 'object' },
+    },
+    titleExtra: {
+      control: { type: 'object' },
+    }
+  }
 };
 
 

@@ -3,6 +3,10 @@
     @apply border-2 border-black transition ease-out duration-200;
 }
 
+.gb-card--shadow {
+    box-shadow: 3px 3px 0 black;
+}
+
 .gb-card--hoverable:hover {
     box-shadow: 3px 3px 0 black;
 }

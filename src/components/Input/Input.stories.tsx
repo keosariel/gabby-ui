@@ -5,7 +5,42 @@ import { Input, InputProps } from '.';
 
 const meta: Meta = {
   title: 'Data Input/Input',
-  component: Input
+  component: Input,
+  argTypes: {
+        type: {
+            options: ['text', 'password', 'email', 'number', 'search', 'tel', 'url'],
+            control: { type: 'select' },
+        },
+        size: {
+            options: ['xs', 'sm', 'md', 'lg', 'xl'],
+            control: { type: 'select' },
+        },
+        disabled: {
+            control: { type: 'boolean' },
+        },
+        error: {
+            control: { type: 'text' },
+        },
+        className: {
+            control: { type: 'text' },
+        },
+        inputRef: {
+            control: { type: 'object' },
+        },
+        onChange: { action: 'changed' },
+        borderless: {
+            control: { type: 'boolean' },
+        },
+        label: {
+            control: { type: 'text' },
+        },
+        placeholder: {
+            control: { type: 'text' },
+        },
+        name: {
+            control: { type: 'text' },
+        }
+    }
 };
 
 const Template: Story<InputProps> = (args) => (

@@ -6,7 +6,37 @@ import { Select, SelectProps, Option } from '.';
 
 const meta: Meta = {
   title: 'Data Input/Select',
-  component: Select
+  component: Select,
+  argTypes: {
+    autofocus: {
+        control: { type: 'boolean' },
+    },
+    disabled: {
+        control: { type: 'boolean' },
+    },
+    childeren: {
+        control: { type: 'object' },
+    },
+    descriptionText: {
+        control: { type: 'text' },
+    },
+    error: {
+        control: { type: 'boolean' },
+    },
+    label: {
+        control: { type: 'text' },
+    },
+    actions: {
+        control: { type: 'object' },
+    },
+    size: {
+        options: ['xs', 'sm', 'md', 'lg', 'xl'],
+        control: { type: 'select' },
+    },
+    borderless: {
+        control: { type: 'boolean' },
+    },
+}
 };
 
 const Template: Story<SelectProps> = (args) => (

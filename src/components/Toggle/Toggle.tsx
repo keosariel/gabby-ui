@@ -10,7 +10,7 @@ export interface ToggleProps {
     descriptionText?: string
     label?: string
     onChange?(x: boolean): void
-    className?: any
+    className?: string
     defaultChecked?: boolean
     checked?: boolean
     size?: ToggleSize

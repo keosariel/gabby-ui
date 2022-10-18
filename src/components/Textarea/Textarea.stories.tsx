@@ -6,7 +6,71 @@ import { Textarea, TextAreaProps } from '.';
 
 const meta: Meta = {
   title: 'Data Input/Textarea',
-  component: Textarea
+  component: Textarea,
+  argTypes: {
+    defaultValue: {
+        control: { type: 'text' },
+    },
+    descriptionText: {
+        control: { type: 'text' },
+    },
+    disabled: {
+        control: { type: 'boolean' },
+    },
+    error: {
+        control: { type: 'string' },
+    },
+    className: {
+        control: { type: 'text' },
+    },
+    label: {
+        control: { type: 'text' },
+    },
+    name: {
+        control: { type: 'text' },
+    },
+    actions: {
+        control: { type: 'object' },
+    },
+    size: {
+        options: ['xs', 'sm', 'md', 'lg', 'xl'],
+        control: { type: 'select' },
+    },
+    borderless: {
+        control: { type: 'boolean' },
+    },
+    type: {
+        options: ['text', 'password', 'email', 'number', 'tel', 'url'],
+        control: { type: 'select' },
+    },
+    placeholder: {
+        control: { type: 'text' },
+    },
+    value: {
+        control: { type: 'text' },
+    },
+    style: {
+        control: { type: 'object' },
+    },
+    rows: {
+        control: { type: 'number' },
+    },
+    limit: {
+        control: { type: 'number' },
+    },
+    onChange: {
+        control: { type: 'function' },
+    },
+    onFocus: {
+        control: { type: 'function' },
+    },
+    onBlur: {
+        control: { type: 'function' },
+    },
+    onKeyDown: {
+        control: { type: 'function' },
+    }
+  }
 };
 
 const Template: Story<TextAreaProps> = (args) => (

@@ -6,7 +6,7 @@ export interface ArenaProps {
     className?: string;
     style?: React.CSSProperties;
     navBar: React.ReactNode;
-    sideBar?: React.ReactNode;
+    sideBar: React.ReactNode;
 }
 
 export const Arena: React.FC<ArenaProps> = ({ children, className, style, navBar, sideBar }) => {
