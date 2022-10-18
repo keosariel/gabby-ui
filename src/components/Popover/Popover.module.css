@@ -49,7 +49,7 @@
 
 .gb-popover__arrow {
     @apply fill-current text-bg-primary-light;
-    @apply border-0 border-t;
+    @apply border-0 border-t fill-black;
     border-style: solid;
 }
 
